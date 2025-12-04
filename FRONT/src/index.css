@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto";
+}
+
+body {
+  background: var(--color-a);
+}
+
+:root {
+  --color-a: #111111;
+  --color-b: #222222;
+  --color-c: #1a1a1a;
+  --color-d: #fafafa;
+  --color-e: #01fe87;
+  --color-f: #009952;
+  --color-g: #ccc;
+  --color-h: rgb(239, 82, 82);
+  --color-i: rgb(71, 71, 255);
+  --color-j: #333333;
+  --color-k: rgb(251, 214, 10);
+
+  --shadow: 0px 3px 6px var(--color-a);
+  --box-dark: rgba(0, 0, 0, 0.95);
+
+  --toast-error-b: rgb(151, 48, 0);
+  --toast-warning-b: rgb(169, 143, 1);
+  --toast-success-b: #016134;
+}
+
+/*--------------Autocomplete dos Formulários/Inputs/Textarea (Início)--------------*/
+/* No chrome quando deixamos a senha salva, há uma falha que altera a estilização do input.*/
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  border: 2px solid var(--color-b); 
+  -webkit-text-fill-color: var(--color-b);
+  color: var(--color-d); 
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-b) inset;
+   transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-transition-delay: 9999s;
+  transition-delay: 9999s; 
+} */
+
+/* input:-webkit-autofill:focus {
+  border: 2px solid var(--color-j);
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-b) inset;
+} */
+
+/*Cor do ícone do calendário (Inputs de data)*/
+/* ::-webkit-calendar-picker-indicator {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(0%) saturate(1535%)
+    hue-rotate(128deg) brightness(99%) contrast(94%);
+} */
+/*--------------Autocomplete dos Formulários/Inputs/Textarea (Fim)--------------*/

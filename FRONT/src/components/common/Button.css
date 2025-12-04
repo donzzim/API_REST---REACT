@@ -1,0 +1,55 @@
+button {
+  border: 1px solid var(--color-j);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  padding: 15px 30px;
+  width: 100%;
+  color: var(--color-b);
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(to right, var(--color-e), var(--color-f));
+  background-position: left;
+  background-size: 200%;
+  transition: background 0.3s;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-position: right;
+}
+
+button.updt,
+button.rmv {
+  padding: 5px 10px;
+  color: var(--color-d);
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+}
+
+button.updt {
+  background: var(--color-i);
+}
+
+button.rmv {
+  background: var(--color-h);
+}
+
+button.updt:hover,
+button.rmv:hover {
+  opacity: 0.85;
+}
+
+/* button.load_more {
+  background: transparent;
+  color: var(--color-d);
+  transition: all 0.3s;
+  border-color: var(--color-b);
+}
+
+button.load_more:hover {
+  border-color: var(--color-j);
+} */

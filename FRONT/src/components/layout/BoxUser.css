@@ -1,0 +1,71 @@
+div.box_user {
+  border-radius: 5px;
+  border: 2px solid var(--color-b);
+  filter: drop-shadow(var(--shadow));
+  margin-bottom: 15px;
+  display: flex;
+  background: var(--color-c);
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+div.box_user:hover {
+  transform: scale(1.015);
+  border: 2px solid var(--color-j);
+  opacity: 1;
+}
+
+div.box_user div.box_picture {
+  width: 150px;
+  height: auto;
+  border-radius: 5px 0px 0px 5px;
+  color: var(--color-d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-right: 1px solid var(--color-b);
+}
+
+div.box_user div.box_infos {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.box_infos div.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 5px;
+}
+
+div.box_infos div.infos h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+div.box_infos div.infos span {
+  color: var(--color-g);
+  font-size: 17px;
+}
+
+div.infos div.birthday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-g);
+}
+
+div.infos div.birthday span {
+  margin-right: 5px;
+  color: var(--color-g);
+}
+
+div.box_infos div.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

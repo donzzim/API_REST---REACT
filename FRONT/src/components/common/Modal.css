@@ -1,0 +1,62 @@
+div.box_dark {
+  background: var(--box-dark);
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div.modal {
+  width: 450px;
+  background: var(--color-a);
+  border-radius: 5px;
+  border: 1px solid var(--color-b);
+}
+
+div.box_dark.opened {
+  display: flex;
+}
+
+div.box_dark.opened div.modal {
+  animation: modal-open-animation 0.3s ease-out;
+}
+
+@keyframes modal-open-animation {
+  /*Efeito abertura modal deslizando de baixo pra cima*/
+  0% {
+    transform: translateY(30vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+div.modal div.header {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-d);
+  border-bottom: 1px solid var(--color-b);
+}
+
+div.modal div.header h1 {
+  font-size: 26px;
+}
+
+div.modal div.header svg {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+div.modal div.header svg:hover {
+  opacity: 0.8;
+}
+
+div.modal div.content {
+  padding: 20px 15px;
+}

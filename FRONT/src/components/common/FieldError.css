@@ -1,0 +1,6 @@
+span.error_message {
+  color: var(--color-h);
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}

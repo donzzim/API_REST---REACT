@@ -1,0 +1,43 @@
+::placeholder {
+  color: var(--color-d);
+  opacity: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  background: var(--color-c);
+  border: 2px solid var(--color-b);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  padding: 20px 30px;
+  width: 100%;
+  font-size: 16px;
+  color: var(--color-d);
+  transition: all 0.3s;
+  outline: none;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover {
+  transform: scale(1.015);
+  border-color: var(--color-j);
+  opacity: 1;
+}
+
+input[type="date"] {
+  color-scheme: dark;
+}
+
+input.field_error {
+  border-color: var(--color-h) !important;
+}
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+} */
