@@ -42,7 +42,7 @@ function Home() {
         setIsLoading(false);
       })
       .catch((error) => {
-        // console.error("Erro ao buscar usuários:", error);
+        console.error("Erro ao buscar usuários:", error);
         setIsLoading(false);
       });
   };
@@ -56,7 +56,7 @@ function Home() {
   const fixCurrentPage = () => {
     //Arredonda pra cima
     let maxNumPage = Math.ceil(totalUsers / numUsersPerPage);
-    
+
     if (currentPage > maxNumPage) {
       setCurrentPage(currentPage - 1);
     }
